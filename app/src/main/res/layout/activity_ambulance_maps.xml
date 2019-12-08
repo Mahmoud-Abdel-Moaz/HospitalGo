@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AmbulanceMapsActivity" >
+
+    <Button
+        android:id="@+id/but_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@id/toolbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.AmbulanceMapsActivity"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/but_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:tint="@color/lightred"
+        android:background="#ffffff"
+        map:backgroundTint="#ffffff" />
+
+
+</RelativeLayout>

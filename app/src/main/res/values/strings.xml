@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HospitalGO</string>
+    <string-array name="spinner_array">
+        <item>Client</item>
+        <item>Ambulance</item>
+    </string-array>
+    <string name="title_activity_client_maps">Map</string>
+    <string name="title_activity_ambulance_maps">Map</string>
+</resources>

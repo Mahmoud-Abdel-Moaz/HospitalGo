@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "337603646452",
+    "firebase_url": "https://hospitalgofirebase.firebaseio.com",
+    "project_id": "hospitalgofirebase",
+    "storage_bucket": "hospitalgofirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337603646452:android:fcea99f2d07c495537dfa1",
+        "android_client_info": {
+          "package_name": "com.mahmoud.hospitalgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337603646452-2tv2ugbajb6qsj3ffnnrtfikfbk02g8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mahmoud.hospitalgo",
+            "certificate_hash": "02b6cc0ab22e4b884d7b55694d3d468d4af8ee5a"
+          }
+        },
+        {
+          "client_id": "337603646452-8teqh1v235asvhn6qh2kmnfmmecvo1po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4xerCON1VdJQtKzcNpAI1e3k8wazwl-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337603646452-8teqh1v235asvhn6qh2kmnfmmecvo1po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

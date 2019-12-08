@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ClientMapsActivity" >
+
+
+    <Button
+        android:id="@+id/but_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <include
+
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <fragment
+        android:id="@+id/map1"
+        android:layout_below="@id/toolbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ClientMapsActivity"/>
+
+    <LinearLayout
+        android:id="@+id/lin_emg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/but_firstAids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="90dp"
+            android:textColor="@color/lightred"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:background="@drawable/border_buttonshap"
+            android:text="First Aids" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginRight="3dp"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:background="@drawable/done_button"
+                android:text="It has arrived!" />
+
+            <Button
+                android:id="@+id/but_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#ffff"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:background="@drawable/call_buton"
+                android:text="Call" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_normal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_diseases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/lightred"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:background="@drawable/border_buttonshap"
+            android:text="Diseases" />
+
+        <Button
+            android:id="@+id/but_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#ffff"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonshap"
+            android:text="Emergency" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
